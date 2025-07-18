@@ -5,6 +5,10 @@ import { AppSidebar } from '@/components/layout/AppSidebar'
 import { Header } from '@/components/layout/Header'
 import { Dashboard } from '@/pages/Dashboard'
 import { Facilities } from '@/pages/Facilities'
+import ProductionMapper from '@/pages/ProductionMapper'
+import EmissionsCalculator from '@/pages/EmissionsCalculator'
+import SupplierCollaboration from '@/pages/SupplierCollaboration'
+import CBAMReports from '@/pages/CBAMReports'
 import { blink } from '@/blink/client'
 import { Toaster } from '@/components/ui/toaster'
 
@@ -66,10 +70,10 @@ function App() {
               <Routes>
                 <Route path="/" element={<Dashboard />} />
                 <Route path="/facilities" element={<Facilities />} />
-                <Route path="/production-mapper" element={<div className="p-6"><h2 className="text-2xl font-bold">Production Mapper</h2><p className="text-gray-600">Coming soon...</p></div>} />
-                <Route path="/calculator" element={<div className="p-6"><h2 className="text-2xl font-bold">Emissions Calculator</h2><p className="text-gray-600">Coming soon...</p></div>} />
-                <Route path="/suppliers" element={<div className="p-6"><h2 className="text-2xl font-bold">Supplier Collaboration</h2><p className="text-gray-600">Coming soon...</p></div>} />
-                <Route path="/reports" element={<div className="p-6"><h2 className="text-2xl font-bold">Reports & Export</h2><p className="text-gray-600">Coming soon...</p></div>} />
+                <Route path="/production" element={<div className="p-6"><ProductionMapper /></div>} />
+                <Route path="/emissions" element={<div className="p-6"><EmissionsCalculator /></div>} />
+                <Route path="/suppliers" element={<div className="p-6"><SupplierCollaboration /></div>} />
+                <Route path="/reports" element={<div className="p-6"><CBAMReports /></div>} />
                 <Route path="/settings" element={<div className="p-6"><h2 className="text-2xl font-bold">Settings</h2><p className="text-gray-600">Coming soon...</p></div>} />
               </Routes>
             </main>

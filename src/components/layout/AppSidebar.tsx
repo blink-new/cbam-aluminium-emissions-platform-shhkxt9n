@@ -23,8 +23,8 @@ const navigation = [
   {
     title: 'Emissions Management',
     items: [
-      { name: 'Production Mapper', href: '/production-mapper', icon: Factory },
-      { name: 'Emissions Calculator', href: '/calculator', icon: Calculator },
+      { name: 'Production Mapper', href: '/production', icon: Factory },
+      { name: 'Emissions Calculator', href: '/emissions', icon: Calculator },
       { name: 'Supplier Collaboration', href: '/suppliers', icon: Users },
     ]
   },
